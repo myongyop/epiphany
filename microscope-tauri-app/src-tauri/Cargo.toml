@@ -4,7 +4,7 @@ version = "1.0.0"
 description = "Professional USB microscope software that makes microscopy accessible to everyone with affordable hardware"
 authors = ["Epiphany Project <epiphany@example.com>"]
 license = "MIT"
-repository = "https://github.com/your-username/epiphany-microscope"
+repository = "https://github.com/myongyop/epiphany"
 keywords = ["microscope", "usb", "science", "education", "imaging"]
 edition = "2021"
 

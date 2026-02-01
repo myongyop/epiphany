@@ -143,8 +143,8 @@ This project was born from a simple belief: **scientific exploration shouldn't b
 ### 📦 **Installation**
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/epiphany-microscope.git
-cd epiphany-microscope
+git clone https://github.com/myongyop/epiphany.git
+cd epiphany
 
 # Install and run
 cd microscope-tauri-app
