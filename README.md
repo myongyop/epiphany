@@ -1,5 +1,11 @@
 # 🔬 Epiphany - Microscopy for Everyone
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg)
+![Tauri](https://img.shields.io/badge/Tauri-2.0-blue.svg)
+![React](https://img.shields.io/badge/React-19-blue.svg)
+![Rust](https://img.shields.io/badge/Rust-2021-orange.svg)
+
 **Making microscopy accessible to everyone with affordable USB microscopes**
 
 ![Epiphany Screenshot](docs/Screenshot%20from%202026-02-01%2023-00-50.png)
