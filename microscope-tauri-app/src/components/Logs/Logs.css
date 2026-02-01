@@ -1,0 +1,115 @@
+.log-panel {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 1rem 1rem 1.25rem 1rem;
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.log-panel h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.log-content {
+  flex: 1;
+  overflow-y: auto;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  min-height: 0;
+  max-height: calc(100% - 120px);
+}
+
+.log-content::-webkit-scrollbar {
+  width: 3px;
+}
+
+.log-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 2px;
+}
+
+.log-content::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--primary-teal), var(--primary-cyan));
+  border-radius: 2px;
+  opacity: 0.8;
+}
+
+.log-content::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--accent-green), var(--primary-teal));
+  opacity: 1;
+}
+
+.log-entry {
+  color: var(--text-secondary);
+  padding: 0.25rem 0;
+  border-bottom: 1px solid var(--border-color);
+  transition: color 0.2s ease;
+}
+
+.log-entry:last-child {
+  border-bottom: none;
+}
+
+.log-entry:hover {
+  color: var(--text-primary);
+}
+
+.log-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  flex-shrink: 0;
+  margin-top: auto;
+  padding-bottom: 0;
+  min-height: 100px;
+}
+
+.log-stats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-family: 'Courier New', monospace;
+  justify-content: space-between;
+}
+
+.btn-log-save {
+  padding: 0.75rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, var(--primary-teal), var(--primary-cyan));
+  color: white;
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  white-space: nowrap;
+  width: 100%;
+  min-height: 44px;
+}
+
+.btn-log-save:hover {
+  background: linear-gradient(135deg, var(--accent-green), var(--primary-teal));
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
+}
